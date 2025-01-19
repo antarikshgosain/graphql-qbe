@@ -1,4 +1,4 @@
-package com.example.graphql_qbe;
+package com.example.qbe;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
