@@ -13,6 +13,6 @@ input BookInput {
 
 type Query {
     books(book: BookInput) : [Book]!
-    booksByIds(ids: [ID!]!): [Book]!
+    bookById(id: Int): Book
     book(id: ID!) : Book
 }

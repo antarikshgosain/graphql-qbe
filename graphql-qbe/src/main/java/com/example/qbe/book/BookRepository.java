@@ -7,4 +7,5 @@ import org.springframework.graphql.data.GraphQlRepository;
 @GraphQlRepository
 public interface BookRepository extends JpaRepository<Book, Long>, QueryByExampleExecutor<Book> {
 
+    Book getBookById(Integer id);
 }

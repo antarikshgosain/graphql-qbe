@@ -1,17 +1,23 @@
- query allBooks {
-   books {
-     id
-     author
-     title
-     publishedYear
-   }
- }
+query allBooks {
+    books {
+        id
+        author
+        title
+        publishedYear
+    }
+}
 
 query booksByNameAndYear {
-    books(book: {
-        author: "J.R.R. Tolkien",
-        publishedYear: 1937
-    }) {
+    books(book: {author: "J.R.R. Tolkien", publishedYear: 1937}) {
+        id
+        author
+        title
+        publishedYear
+    }
+}
+
+query bookById {
+    bookById(id: 2) {
         id
         author
         title
